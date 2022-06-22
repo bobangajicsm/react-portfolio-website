@@ -12,3 +12,8 @@ body {
   overflow: hidden;
   display: block;
 }
+
+.dashboard {
+  margin-top: 200px;
+  margin-left: 200px;
+}
