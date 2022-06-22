@@ -20,12 +20,7 @@ const Contact = () => {
     e.preventDefault()
 
     emailjs
-      .sendForm(
-        'gmail',
-        'template_YeJhZkgb',
-        form.current,
-        'your-token'
-      )
+      .sendForm('gmail', 'template_YeJhZkgb', form.current, 'your-token')
       .then(
         () => {
           alert('Message successfully sent!')
@@ -49,9 +44,9 @@ const Contact = () => {
             />
           </h1>
           <p>
-            I am interested in freelance opportunities - especially ambitious or
-            large projects. However, if you have other request or question,
-            don't hesitate to contact me using below form either.
+            I am interested in freelance opportunities - especially on ambitious
+            or large projects. However, if you have any other requests or
+            questions, don't hesitate to contact me using below form either.
           </p>
           <div className="contact-form">
             <form ref={form} onSubmit={sendEmail}>
