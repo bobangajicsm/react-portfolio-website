@@ -114,3 +114,16 @@
     }
   }
 }
+
+@media screen and (max-width: 1200px) {
+  .map-wrap {
+    float: none;
+    margin: 0;
+    width: 100%;
+    height: 400px;
+  }
+  
+  .info-map {
+    display: none;
+  }
+}

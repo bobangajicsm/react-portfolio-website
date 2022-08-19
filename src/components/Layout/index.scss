@@ -113,3 +113,51 @@
     }
   }
 }
+
+@media screen and (max-width: 1200px) {
+  .page {
+    position: initial;
+  }
+
+  .container {
+    position: initial;
+    height: auto;
+    min-height: auto;
+
+    &.contact-page,
+    &.about-page,
+    &.portfolio-page {
+      .text-zone {
+        position: initial;
+        transform: none;
+        width: 100%;
+        display: block;
+        padding: 20px;
+        box-sizing: border-box;
+      }
+    }
+
+    &.portfolio-page {
+      width: 100%;
+      padding: 20px;
+      box-sizing: border-box;
+
+      h1.page-title {
+        margin-left: 20px;
+        margin-top: 20px;
+      }
+
+      .image-box {
+        height: 200px;
+        max-width: calc(50% - 10px);
+      }
+    }
+  }
+
+  .stage-cube-cont {
+    position: initial;
+    width: 100%;
+    height: 0%;
+    overflow: visible;
+  }
+}
