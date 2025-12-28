@@ -6,6 +6,8 @@ import emailjs from '@emailjs/browser'
 import AnimatedLetters from '../AnimatedLetters'
 import './index.scss'
 
+const contactMeArray = "Contact me".split('') // same as ['C','o','n','t','a','c','t',' ','m','e']
+
 const Contact = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
   const form = useRef()
@@ -39,7 +41,7 @@ const Contact = () => {
           <h1>
             <AnimatedLetters
               letterClass={letterClass}
-              strArray={['C', 'o', 'n', 't', 'a', 'c', 't', ' ', 'm', 'e']}
+              strArray={ contactMeArray }
               idx={15}
             />
           </h1>

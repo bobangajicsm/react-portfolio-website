@@ -12,6 +12,7 @@ import AnimatedLetters from '../AnimatedLetters'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import './index.scss'
 
+const aboutMeArray = "About me".split('') // same as ['A', 'b', 'o', 'u', 't', ' ', 'm', 'e']
 const About = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
 
@@ -28,7 +29,7 @@ const About = () => {
           <h1>
             <AnimatedLetters
               letterClass={letterClass}
-              strArray={['A', 'b', 'o', 'u', 't', ' ', 'm', 'e']}
+              strArray={ aboutMeArray }
               idx={15}
             />
           </h1>
